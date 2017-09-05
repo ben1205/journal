@@ -20,9 +20,9 @@ what I have learned everyday
 
 ### 2017/9/5
 ### JavaScript底层方法contains用于判断DOM间是否为父级包含关系
-<script>
+<pre>
   var A = document.createElement('div');
   var B = document.createElement('p');
   A.appendChild(B);
   console.log(A.contains(B));//true
-</script>
+</pre>

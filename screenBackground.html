@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>根据屏幕宽度改变背景图样式</title>
+  <link rel="preload" href="./img/01.jpg" as="image" media = "(max-width:600px)">
+  <link rel="preload" href="./img/02.png" as="image" media = "(min-width:601px)">
+</head>
+<body>
+  <header>
+    <p>123</p>
+  </header>
+</body>
+<script>
+    var me = window.matchMedia("(max-width:800px)");
+    var header = document.querySelector('header');
+
+    if(me.matches){
+      header.style.backgroundImage = 'url(./img/01.jpg)';
+    }else{
+      header.style.backgroundImage = 'url(./img/02.png)';
+    }
+
+    //预加载javaScript文件
+    var preloadLink = document.createElement("link");
+    preloadLink.href = "./js/jQuery@1.12.4.min.js";
+    preloadLink.rel = "preload";
+    preloadLink.as = "script";
+    document.head.appendChild(preloadLink);
+
+    ///正式使用预加载的javaScript文件
+    var preloadedScript = document.createElement("script");
+    preloadedScript.src = "./js/jQuery@1.12.4.min.js";
+    document.body.appendChild(preloadedScript);
+</script>
+</html>

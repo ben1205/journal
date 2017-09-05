@@ -27,5 +27,5 @@ what I have learned everyday
   console.log(A.contains(B));//true
 </pre>
 
-### mtea标签随屏幕宽度更换对应图片预加载与JS文件预加载
+### meta标签随屏幕宽度更换对应图片预加载与JS文件预加载
 >>[demo示例](https://github.com/ben1205/journal/blob/master/screenBackground.html)

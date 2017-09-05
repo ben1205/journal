@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>根据屏幕宽度改变背景图样式</title>
-  <link rel="preload" href="./img/01.jpg" as="image" media = "(max-width:600px)">
-  <link rel="preload" href="./img/02.png" as="image" media = "(min-width:601px)">
+  <link rel="preload" href="./01.jpg" as="image" media = "(max-width:600px)">
+  <link rel="preload" href="./02.png" as="image" media = "(min-width:601px)">
 </head>
 <body>
   <header>
@@ -16,9 +16,9 @@
     var header = document.querySelector('header');
 
     if(me.matches){
-      header.style.backgroundImage = 'url(./img/01.jpg)';
+      header.style.backgroundImage = 'url(./01.jpg)';
     }else{
-      header.style.backgroundImage = 'url(./img/02.png)';
+      header.style.backgroundImage = 'url(./02.png)';
     }
 
     //预加载javaScript文件

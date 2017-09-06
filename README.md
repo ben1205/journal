@@ -32,6 +32,6 @@ what I have learned everyday
 
 ----------------------------------------------------------------------------------------------------
 
-###2017/9/6
-###ES6新方法，新对象，新构造器(Symbol,Object.is)
+### 2017/9/6
+### ES6新方法，新对象，新构造器(Symbol,Object.is)
 >>[demo]（https://github.com/ben1205/journal/blob/master/1796mess.js）

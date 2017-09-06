@@ -29,3 +29,9 @@ what I have learned everyday
 
 ### meta标签随屏幕宽度更换对应图片预加载与JS文件预加载
 >>[demo示例](https://github.com/ben1205/journal/blob/master/screenBackground.html)
+
+----------------------------------------------------------------------------------------------------
+
+###2017/9/6
+###ES6新方法，新对象，新构造器(Symbol,Object.is)
+>>[demo]（https://github.com/ben1205/journal/blob/master/1796mess.js）

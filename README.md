@@ -80,3 +80,12 @@ what I have learned everyday
 	是受教了，js发展到后来的写法也是越来越简洁明了了，mysql部分的学习我暂时选择跳过，等学了mysql相关的基础
 	之后再来补一补课，还有利用REST来写WEB API那部分也是有云里雾里，总的来说收获良多
 </pre>
+----------------------------------------------------------------------------------------------------
+
+### 2017/10/23
+### mysql爬坑记
+
+创建数据库时<pre>`sex`  char(2) NOT NULL DEFAULT '保密' COMMENT '性别'</pre><br/>
+在mysql控制台报错<pre>ERROR 1067 (42000): Invalid default value for 'sex'</pre><br/>
+利用修改字符集的方法，首先status查看状态，看到四个utf-8;然后更改临时字符集SET NAMES GBK;<br/>
+再status看一下，发现这回状态中是两个utf-8和两个gbk，重新去创建数据库，发现问题解决！！！！欢呼
